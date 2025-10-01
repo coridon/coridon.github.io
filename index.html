@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Coridon — Portfolio</title>
+  <meta name="description" content="Personal site / portfolio of Coridon">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand"><a href="#">Coridon</a></h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="btn-small">Toggle</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div>
+        <h2>Hi — I’m <span class="accent">Coridon</span>.</h2>
+        <p>I build things with code, data and design. This is my GitHub Pages site template, customized with my username.</p>
+        <p class="cta"><a class="btn" href="#projects">See projects</a></p>
+      </div>
+      <div class="hero-card">
+        <img src="/hero-illustration.svg" alt="illustration" width="360">
+      </div>
+    </section>
+
+    <section id="about" class="container card">
+      <h3>About</h3>
+      <p>Short bio: your background, what you do, and what you’re looking for.</p>
+      <ul>
+        <li>Location: City, Country</li>
+        <li>Role: Developer / Researcher / Designer</li>
+        <li>Contact: coridon@example.com</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card project">
+          <h4>Project One</h4>
+          <p>Short description. <a href="https://github.com/coridon/project-one">View repo</a></p>
+        </article>
+        <article class="card project">
+          <h4>Project Two</h4>
+          <p>Short description. <a href="https://github.com/coridon/project-two">View repo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="blog" class="container card">
+      <h3>Blog</h3>
+      <p>Short teaser for recent posts or link to a /blog folder (Jekyll or static markdown).</p>
+    </section>
+
+    <section id="contact" class="container card">
+      <h3>Contact</h3>
+      <p>Want to collaborate? Email <a href="mailto:coridon@example.com">coridon@example.com</a> or use the form below.</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built with ❤️ · <a href="https://github.com/">GitHub Pages</a></p>
+      <p class="muted">© <span id="year"></span> Coridon</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script: year + theme toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', () => document.documentElement.classList.toggle('dark'));
+  </script>
+</body>
+</html>
