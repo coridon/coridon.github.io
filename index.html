@@ -1,101 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Coridon — Portfolio</title>
-  <meta name="description" content="Personal site / portfolio of Coridon">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coridon</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .bio {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+        a:hover {
+            border-bottom: 1px solid #0066cc;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .date {
+            color: #888;
+            font-size: 0.9em;
+            margin-right: 10px;
+            font-family: monospace;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand"><a href="#">Coridon</a></h1>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="themeToggle" class="btn-small">Toggle</button>
-    </div>
-  </header>
 
-  <main>
-    <section id="hero" class="hero container">
-      <div>
-        <h2>Hi — I’m <span class="accent">Coridon</span>.</h2>
-        <p>I build things with code, data and design. This is my GitHub Pages site template, customized with my username.</p>
-        <p class="cta"><a class="btn" href="#projects">See projects</a></p>
-      </div>
-      <div class="hero-card">
-        <img src="/hero-illustration.svg" alt="illustration" width="360">
-      </div>
+    <header>
+        <h1>Coridon</h1>
+        <p class="bio">
+            Γεια, είμαι ο Coridon. <br>
+            Ασχολούμαι με [Γράψε εδώ την ειδικότητά σου]. <br>
+            Καλώς ήρθες στην προσωπική μου σελίδα.
+        </p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h3>Projects / Εργασίες</h3>
+        <ul>
+            <li>
+                <span class="date">2024</span>
+                <a href="#">Όνομα ενός Project</a> - Μια σύντομη περιγραφή.
+            </li>
+            <li>
+                <span class="date">2023</span>
+                <a href="#">Άλλο Project</a> - Περιγραφή του τι έκανες εδώ.
+            </li>
+        </ul>
     </section>
 
-    <section id="about" class="container card">
-      <h3>About</h3>
-      <p>Short bio: your background, what you do, and what you’re looking for.</p>
-      <ul>
-        <li>Location: City, Country</li>
-        <li>Role: Developer / Researcher / Designer</li>
-        <li>Contact: coridon@example.com</li>
-      </ul>
+    <section>
+        <h3>Links / Σύνδεσμοι</h3>
+        <ul>
+            <li><a href="mailto:email@example.com">Email</a></li>
+            <li><a href="https://github.com/coridon">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter / X</a></li>
+        </ul>
     </section>
 
-    <section id="projects" class="container">
-      <h3>Projects</h3>
-      <div class="grid">
-        <article class="card project">
-          <h4>Project One</h4>
-          <p>Short description. <a href="https://github.com/coridon/project-one">View repo</a></p>
-        </article>
-        <article class="card project">
-          <h4>Project Two</h4>
-          <p>Short description. <a href="https://github.com/coridon/project-two">View repo</a></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="blog" class="container card">
-      <h3>Blog</h3>
-      <p>Short teaser for recent posts or link to a /blog folder (Jekyll or static markdown).</p>
-    </section>
-
-    <section id="contact" class="container card">
-      <h3>Contact</h3>
-      <p>Want to collaborate? Email <a href="mailto:coridon@example.com">coridon@example.com</a> or use the form below.</p>
-      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-        <label>
-          <span>Name</span>
-          <input name="name" required>
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          <span>Message</span>
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn" type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Built with ❤️ · <a href="https://github.com/">GitHub Pages</a></p>
-      <p class="muted">© <span id="year"></span> Coridon</p>
-    </div>
-  </footer>
-
-  <script>
-    // small script: year + theme toggle
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const btn = document.getElementById('themeToggle');
-    btn.addEventListener('click', () => document.documentElement.classList.toggle('dark'));
-  </script>
 </body>
 </html>
